@@ -13,14 +13,22 @@ function cacheFunction(cb) {
 
 }
 
-function CadenaInvertida(str) {
     // Instrucción:
     // Dada una cadena, escriba una función recursiva para devolver la cadena invertida. */// Ejemplo:
     // => 'divoco'
     //cadena inversa('covid')
     // Aqui tu codigo
+function CadenaInvertida(str) {
 
-}
+        if (str === "")
+          return "";
+        else
+          return CadenaInvertida(str.substr(1)) + str.charAt(0);
+      }
+
+console.log(CadenaInvertida("divoc"));
+
+
 
 function EnteroMasGrande(array) {
     // Instruction:
