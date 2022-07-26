@@ -1,20 +1,50 @@
 Explica los siguentes conceptos con tus propias palabras.
 
 
-1- Scope
+1- Scope: se refiere al ámbito o "lugar" del codigo de programacion donde una variable
+podrá ser accesible. Se puede definir tambien como el alcance que determina la accesibilidad
+de las variables en cada parte del codigo. Esto sirve para que se pueda volver a definir una 
+variable con un mismo nombre en diferentes partes del programa sin que haya conflictos entre ellos.
 
-2- Tipos de datos
+2- Tipos de datos: el tipado de datos puede ser estatico o dinamico. Por ejemplo, JavaScript es un 
+lenguaje de tipado dinámico. Esto significa que no es necesario declarar de qué tipo es la variable 
+antes de su uso. Esta comprobación de los tipos se realiza durante la ejecución del programa en vez 
+de durante la compilación. Y en cambio, en el tipado estatico si es necesario declarar el tipo de
+dato a utilizar. 
 
-3- Operadores
+3- Operadores: Los operadores son aquellos que nos permiten realizar diferentes operaciones entre uno, 
+dos o tres operandos. Existen diferentes tipos de operadores: operadores de asignacion, se asigna un 
+valor a una variable y el operador de asignación es el símbolo igual; operadores aritmeticos, son 
+aquellos que nos permiten realizar operacines matematicas (suma (+), multiplicacion*, division/, resta-);
+y los operadores logicos que están relacionados con el álgebra de Boole y devuelven como resultado un 
+valor lógico, que será true si la evaluación de la expresión es cierta o false en caso contrario.
+Se dice que un operador puede cumplir la misma funcion que una function. 
 
-4- Coercion
+4- Coercion: es la conversion automatica o implicita de valores de un tipo de dato a otro. En JavaScript, 
+la coerción es una característica que fuerza a una variable de cierto tipo a tener el comportamiento 
+de otra variable diferente. 
 
-5- Precedencia
+5- Precedencia: la precedencia de operadores determina el orden en el cual se evaluan los operadores.
+Los operadores que tienen mayor precedencia son los que son evaluados primero. 
 
-6- Bind
+6- Bind:La función bind() devuelve una copia de una función, la cúal quedara siempre ligada al objeto 
+que le pasamos cómo parametro. Esto ultimo se debe a que, internamente tiene asociado el keyword this 
+al objeto que le pasemos como argumento. O sea que si quisieramos usar esa funcion para otro objeto, 
+tendríamos que crear una nueva copia de la función y brindarle un nuevo objeto.
 
-7- Apply
 
-8- Promesas
+7- Apply: El método apply() invoca una determinada función asignando explícitamente el objeto this y 
+un array o similar, como parámetros para dicha función. Este metodo es muy similar al metodo call, la 
+única diferencia entre ambos reside en el segundo argumento, donde call() será un listado de argumentos 
+infinito y apply() será un array.
 
-9- Recursividad
+
+8- Promesas: Una promesa es un objeto que representa un valor que puede que esté disponible ahora, en el futuro o que 
+nunca lo esté. Como no se sabe cuándo va a estar disponible, todas las operaciones dependientes de ese 
+valor, tendrán que posponerse en el tiempo. Las promesas pueden tener tres estados, pendiente, resuelta o rechazada.
+Se dice que las promesas son un concepto para resolver el problema de asincronía de una forma mucho más práctica.
+Por lo tanto, son objetos que se usan para computaciones asincronicas. 
+
+
+9- Recursividad:La recursividad consiste en funciones que se llaman a sí mismas hasta que cumplen cierta 
+condicion en la que se deja de llamar. De esta forma se evita el uso de bucles y otros iteradores.
