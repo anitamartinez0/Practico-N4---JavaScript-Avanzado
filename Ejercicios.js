@@ -1,19 +1,3 @@
-    // Usa closures para crear un cache para la funcion cb.
-    // la funcion que retornas debe aceptar un solo argumento e invocar a cb con ese argumento
-    // cuando la funcion que hayas retornado es invocada de nuevo, deberia guardar el argumento y el resultado de la invocacion
-    // cuando la funcion que retornaste sea invocada de nuevo con un argumento con el cual se habia invocado anterioremente, no deberia invocar de nuevo a cb
-    // deberia retornar el resultado (previamente guardado)
-    // Ejemplo:
-    // cb -> function(x) { return x * x; }
-    // si invocas la function que retornaste con 5, adentro deberia invocar cb(5) y retornar 25.
-    // si la invocas de nuevo con 5, deberia retornar 25 (guardado previament en el cache)
-    // Tips, usá un objeto donde cada propiedad sea un argumento, y el valor el resultado.
-    // Aqui tu codigo
-
-    function cacheFunction(cb) {
-
-    }
-
     // Instrucción:
     // Dada una cadena, escriba una función recursiva para devolver la cadena invertida. */// Ejemplo:
     // => 'divoco'
@@ -82,13 +66,19 @@ function Permutaciones(str){
 }
 console.log(Permutaciones('abc'));
 
- //   void permutaion(String str, String prefix){ 
-   //     if(str.length() == 0){ 
-   //         System.out.println(prefix); 
-     //   } else{ 
-       //     for(int i=0; i < str.length(); i++){ 
-         //       string rem = str.substring(0,i) + str.substring(i+1); 
-           //     permutaion(rem, prefix + str.charAt(i)); 
-            //} 
-        //} 
-    //}
+ 
+    // Usa closures para crear un cache para la funcion cb.
+    // la funcion que retornas debe aceptar un solo argumento e invocar a cb con ese argumento
+    // cuando la funcion que hayas retornado es invocada de nuevo, deberia guardar el argumento y el resultado de la invocacion
+    // cuando la funcion que retornaste sea invocada de nuevo con un argumento con el cual se habia invocado anterioremente, no deberia invocar de nuevo a cb
+    // deberia retornar el resultado (previamente guardado)
+    // Ejemplo:
+    // cb -> function(x) { return x * x; }
+    // si invocas la function que retornaste con 5, adentro deberia invocar cb(5) y retornar 25.
+    // si la invocas de nuevo con 5, deberia retornar 25 (guardado previament en el cache)
+    // Tips, usá un objeto donde cada propiedad sea un argumento, y el valor el resultado.
+    // Aqui tu codigo
+
+    function cacheFunction(cb) {
+
+    }
